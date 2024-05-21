@@ -1,8 +1,10 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { App } from "./App";
+import { App as Entry } from "./App";
 
 const root = document.getElementById("root");
 const reactDom = createRoot(root);
 
-reactDom.render(<App />);
+reactDom.render(<Entry />);
+
+console.log('test on backend')

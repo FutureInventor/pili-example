@@ -1,6 +1,6 @@
 const http = require("http");
 
-const users = [
+const clients = [
   {
     id: 0,
     name: "Piotr",
@@ -16,7 +16,7 @@ const users = [
 http
   .createServer(async ({ url }, res) => {
     switch (url) {
-      case "/users":
+      case "/clients":
         res.writeHead(200, { "Content-Type": "text/json" });
         res.write(Buffer.from(JSON.stringify(users)));
         res.end();
@@ -26,4 +26,4 @@ http
         res.end();
     }
   })
-  .listen(8000);
+  .listen(8888);
