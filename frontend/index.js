@@ -1,10 +1,10 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { App as Opened} from "./App"; //change
+import { App as Entry } from "./App";
 
 const root = document.getElementById("root");
 const reactDom = createRoot(root);
 
-reactDom.render(<Opened />); //change
+reactDom.render(<Entry />);
 
 console.log('test on backend')
