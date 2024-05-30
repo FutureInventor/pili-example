@@ -7,4 +7,4 @@ const reactDom = createRoot(root);
 
 reactDom.render(<Entry />);
 
-console.log('test on backend')
+console.log('testing on backend')
